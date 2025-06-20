@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Python tooling
+*.log
+*.coverage
+.coverage.*
+.cache/
+.pytest_cache/
+
+# Notebooks and checkpoints
+.ipynb_checkpoints/
+
+# VSCode and IDE metadata
+.vscode/
+.idea/
+
+# Docker
+*.tar
+*.img
+*.container
+*.bak
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Model files
+*.pt
+*.pkl
+*.onnx
+
+# Helm charts build output
+*.tgz
+
+# CI/CD Secrets or overrides
+secrets.env
+.env
