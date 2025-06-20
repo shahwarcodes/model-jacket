@@ -2,7 +2,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="model-jacket",
+    name="model_jacket",
     version="0.1.0",
     description="Package any ML model into a scalable, observable FastAPI service",
     long_description=open("README.md").read(),

@@ -29,13 +29,3 @@ jobs:
           context: .
           tags: ghcr.io/${{ github.repository }}:latest
           push: true
-
-      - name: Setup Helm
-        uses: azure/setup-helm@v3
-
-      - name: Helm Deploy
-        run: |
-          helm upgrade --install model-jacket ./helm/model-jacket \
-            --set image.repository=ghcr.io/${{ github.repository }} \
-            --set image.tag=latest \
-            --wait
