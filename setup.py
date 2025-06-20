@@ -1,15 +1,17 @@
-# File: setup.py
+# setup.py
 from setuptools import setup, find_packages
 
 setup(
     name="model-jacket",
-    version="0.1",
+    version="0.1.0",
+    description="Package any ML model into a scalable, observable FastAPI service",
+    long_description=open("README.md").read(),
+    long_description_content_type="text/markdown",
+    author="Shahwar Saleem",
+    author_email="saleemshahwar@email.com",
+    url="https://github.com/shahwarcodes/model-jacket",
     packages=find_packages(),
-    entry_points={
-        "console_scripts": [
-            "jacket=jacket_cli.__main__:main"
-        ]
-    },
+    include_package_data=True,
     install_requires=[
         "fastapi",
         "uvicorn[standard]",
@@ -20,4 +22,15 @@ setup(
         "scikit-learn",
         "joblib"
     ],
+    entry_points={
+        "console_scripts": [
+            "jacket=jacket_cli.__main__:main"
+        ]
+    },
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires='>=3.8',
 )
