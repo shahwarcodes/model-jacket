@@ -1,7 +1,8 @@
 # Model Jacket
 
+[![Build](https://github.com/shahwarcodes/model-jacket/actions/workflows/build.yml/badge.svg)](https://github.com/shahwarcodes/model-jacket/actions/workflows/build.yml)
+[![Publish](https://github.com/shahwarcodes/model-jacket/actions/workflows/publish.yml/badge.svg)](https://github.com/shahwarcodes/model-jacket/actions/workflows/publish.yml)
 [![PyPI version](https://img.shields.io/pypi/v/model-jacket.svg)](https://pypi.org/project/model-jacket/)
-[![Build](https://github.com/shahwarcodes/model-jacket/actions/workflows/publish.yml/badge.svg)](https://github.com/shahwarcodes/model-jacket/actions/workflows/publish.yml)
 [![License](https://img.shields.io/github/license/shahwarcodes/model-jacket)](./LICENSE)
 
 **Model Jacket** is a lightweight toolkit that wraps any ML model (Torch, ONNX, Scikit-learn) into a scalable, observable API server with one command. It provides Dockerized model APIs, metrics, Kubernetes deployment, and a PyPI-installable CLI — all in one place.
