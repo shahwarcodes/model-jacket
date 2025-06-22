@@ -17,7 +17,7 @@ def _parse_args():
     build.add_argument("--framework", required=True, choices=["torch", "onnx", "sklearn"], help="Model framework")
     build.add_argument("--model-path", required=True, help="Path to model artifact")
     build.add_argument("--tag", default="latest", help="Image tag")
-    build.add_argument("--repo", default="model-jacket", help="Image repository")
+    build.add_argument("--repo", default="model_jacket", help="Image repository")
 
     serve = sub.add_parser("serve", help="Run locally for testing")
     serve.add_argument("--port", type=int, default=8000)

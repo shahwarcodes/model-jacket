@@ -1,12 +1,12 @@
 apiVersion: autoscaling/v2beta2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: {{ include "model-jacket.fullname" . }}
+  name: {{ include "model_jacket.fullname" . }}
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: {{ include "model-jacket.fullname" . }}
+    name: {{ include "model_jacket.fullname" . }}
   minReplicas: 2
   maxReplicas: 10
   metrics:

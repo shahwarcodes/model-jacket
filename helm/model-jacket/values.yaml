@@ -1,6 +1,6 @@
 replicaCount: 2
 image:
-  repository: model-jacket
+  repository: model_jacket
   tag: latest
   pullPolicy: IfNotPresent
 resources:

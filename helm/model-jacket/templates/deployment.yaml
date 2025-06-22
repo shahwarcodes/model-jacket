@@ -1,24 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: {{ include "model-jacket.fullname" . }}
+  name: {{ include "model_jacket.fullname" . }}
   labels:
-    app: {{ include "model-jacket.name" . }}
+    app: {{ include "model_jacket.name" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: {{ include "model-jacket.name" . }}
+      app: {{ include "model_jacket.name" . }}
   template:
     metadata:
       labels:
-        app: {{ include "model-jacket.name" . }}
+        app: {{ include "model_jacket.name" . }}
       annotations:
         prometheus.io/scrape: "true"
         prometheus.io/port: "8000"
     spec:
       containers:
-        - name: model-jacket
+        - name: model_jacket
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           ports:
             - containerPort: 8000
